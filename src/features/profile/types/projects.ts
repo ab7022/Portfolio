@@ -9,5 +9,6 @@ export type Project = {
   skills: string[];
   description?: string;
   logo?: string;
+  logoDark?: string;
   isExpanded?: boolean;
 };

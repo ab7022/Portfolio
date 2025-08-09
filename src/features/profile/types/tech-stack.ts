@@ -3,6 +3,7 @@ export type TechStack = {
   title: string; // Display name of the technology
   href: string; // Official website URL of the technology
   categories: string[];
+  icon?: any; // Optional URL to the icon image
   theme?: boolean; // If `true`, the icon changes based on dark and light mode
   // Icon paths:
   // - Default: ./public/tech-stack-icons/[key].svg

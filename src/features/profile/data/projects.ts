@@ -2,44 +2,130 @@ import type { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
-    id: "react-wheel-picker",
-    title: "React Wheel Picker",
+    id: "DevlopAI",
+    title: "Devlop.app",
     period: {
-      start: "05.2025",
+      start: "04.2025",
+      end: "08.2025",
     },
-    link: "https://react-wheel-picker.chanhdai.com",
+    link: "https://devlop.app",
     skills: [
-      "Open Source",
-      "React",
+      "Next.js",
+      "React Native",
+      "OpenAI",
       "TypeScript",
-      "Monorepo",
-      "Turborepo",
-      "pnpm-workspace",
-      "Package Publishing",
-      "NPM Registry",
-      "GitHub Actions",
+      "Tailwind CSS",
+      "Snack SDK",
+      "Prisma",
+      "AWS",
     ],
-    description: `iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support.
-- 📱 Natural touch scrolling with smooth inertia effect
-- 🖱️ Mouse drag and scroll support for desktop
-- 🔄 Infinite loop scrolling
-- 🎨 Unstyled components for complete style customization
-- ⚡️ Easy installation via shadcn CLI
-
-This project is proudly supported by:
-
-[![Vercel OSS Program](https://vercel.com/oss/program-badge.svg)](https://vercel.com/oss)
-`,
-    logo: "https://assets.chanhdai.com/images/project-logos/react-wheel-picker.svg",
+    description: `AI-powered no-code platform to instantly generate and preview full-stack mobile apps.
+- 🤖 Generate complete React Native apps from simple prompts
+- 📱 Live preview with interactive device simulator
+- 💾 Export full project code as ZIP, APK, or GitHub repo
+- ⚡ Seamless AI-driven edits for rapid iteration and launch
+- 🚀 2,000+ signups, 11,000+ active users, and $X in revenue in 3 months
+- added integration for github and supabase`,
+    logo: "/DevlopAi.png",
+    logoDark: "/DevlopAI-2.png",
     isExpanded: true,
   },
+
   {
-    id: "chanhdaidotcom",
-    title: "chanhdai.com",
+    id: "Kumospace",
+    title: "Kumospace",
+    period: {
+      start: "11.2024",
+      end: "01.2025",
+    },
+    link: "https://kumospace.vercel.app",
+    skills: [
+      "WebRTC",
+      "Next.js 15",
+      "Tailwind CSS v3",
+      "shadcn/ui",
+      "WebSockets",
+      "prisma",
+      "Socket.io",
+      "Vercel",
+    ],
+    description: `Kumospace is a collaboration hub with crystal‑clear HD video calls (up to 100 participants), natural voice channels, one‑click screen sharing, and secure direct/group messaging with end‑to‑end encryption. It powers focused teamwork with built‑in task management, real‑time progress tracking, and dedicated team spaces for every project.
+
+- 🏢 Live team presence with frictionless collaboration
+- 📊 Actionable analytics to track workspace productivity
+- 💬 Crystal-clear audio and instant video chats for natural conversations
+- 🌎 Work from anywhere on any device
+- 💡 Interactive virtual environments that boost engagement
+`,
+  },
+  {
+    id: "Eazyfolio",
+    title: "Eazyfolio",
+    period: {
+      start: "05.2024",
+      end: "08.2024",
+    },
+    link: "https://eazyfolio.vercel.app/",
+    skills: [
+      "Next.js",
+      "Open Source",
+      "Tailwind CSS",
+      "Radix UI",
+      "shadcn/ui",
+      "Vercel",
+    ],
+    description: `EazyFolio is a popular no‑code portfolio builder to launch a professional personal site in minutes. It includes polished templates, a resume generator, and a dashboard to manage your site and subscription. and its used by 25,000+ users.
+
+- Template gallery with modern themes, live demos, and detail pages
+- Resume/PDF generation (via React PDF) with sections for work, education, skills, and projects
+- User dashboard showing site status, quick links, and subscription/trial management
+- “My Account” forms to capture personal info, experience (multi‑entry), education, skills, achievements, and projects
+- Authentication and database integration (NextAuth + Prisma)
+- Asset handling with AWS S3 SDK
+`,
+    logo: "/Eazyfolio.jpeg",
+  },
+
+  {
+    id: "Quraan-Kareem",
+    title: "Quraan Kareem",
+    period: {
+      start: "07.2025",
+      end: "08.2025",
+    },
+
+    link: "https://play.google.com/store/apps/details?id=com.quranapp.mobile",
+    skills: [
+      "React Native",
+      "TWRNC",
+      "API",
+      "Firebase",
+      "Android",
+      "Play Store",
+    ],
+    description: `Quraan App is a modern, lightweight Quran companion for reading, listening, and study on the go. It offers a clean, distraction-free interface with fast search, bookmarking, and optional offline access.
+
+- Complete Mushaf with clear Uthmani script
+- Audio recitations (ayah/surah), with streaming and optional offline downloads
+- Translations in multiple languages, toggle per ayah
+- Tafsir references for deeper study
+- Powerful search by surah, ayah, and keywords
+- Bookmarks, favorites, and last-read tracking
+- Adjustable font size, themes (light/dark), and reading modes
+- Verse sharing (copy as text or share image)
+- Daily ayah notifications and study reminders
+- Khatm (completion) progress tracker
+`,
+    logo: "/Quraan.png",
+  },
+  {
+    id: "Portfolio",
+    title: "Portfolio",
     period: {
       start: "01.2025",
+      end: "03.2025",
     },
-    link: "https://github.com/ncdai/chanhdai.com",
+    link: "https://github.com/ab7022/chanhdai.com",
     skills: [
       "Open Source",
       "Next.js 15",
@@ -47,209 +133,72 @@ This project is proudly supported by:
       "Radix UI",
       "Motion",
       "shadcn/ui",
-      "Component Registry",
       "Vercel",
     ],
-    description: `A minimal portfolio, component registry, and blog.
+    description: `A minimal portfolio and blog.
 - Clean & modern design
 - Light & Dark theme support
 - vCard integration
-- SEO optimization: [JSON-LD schema](https://json-ld.org), sitemap, robots
+- SEO optimizatised
 - AI-friendly [/llms.txt](https://llmstxt.org)
 - Spam-protected email
-- Installable PWA
+- Installable PWA`,
+    logo: "/logo.svg",
+    logoDark: "/logo-white.svg",
+  },
+  {
+    id: "Chefify",
+    title: "Chefify",
+    period: {
+      start: "02.2024",
+      end: "05.2024",
+    },
+    link: "https://chefify.vercel.app",
+    skills: ["React", "Node.js", "MongoDB", "API", "OpenAI", "tailwindcss"],
+    description: `Chefify is an AI-powered recipe discovery website that helps you find, explore, and cook delicious meals with ease. Search by cravings or ingredients, browse curated categories, and get smart suggestions tailored to your taste.
 
-Blog Features:
-- MDX & Markdown support
-- Syntax Highlighting for better readability
-- RSS Feed for easy content distribution
-- Dynamic OG Images for rich previews`,
-    logo: "https://assets.chanhdai.com/images/project-logos/chanhdaidotcom.svg",
+- AI Search for natural-language recipe queries with helpful, formatted results
+- Explore and search recipes powered by TheMealDB, with “Show more” pagination
+- Category browsing with quick filters and curated suggestions
+- Detailed recipe pages with images, category/area info, and easy navigation
+- Like/favorite recipes and view them in your Profile (login required)
+- Simple authentication with Login/Logout and token-based session
+`,
   },
   {
-    id: "quaricdotcom",
-    title: "quaric.com",
+    id: "Ideaally",
+    title: "Ideaally",
     period: {
-      start: "03.2024",
+      start: "02.2024",
+      end: "03.2024",
     },
-    link: "https://quaric.com",
-    skills: [
-      "Company Project",
-      "Next.js 15",
-      "Tailwind CSS v3",
-      "shadcn/ui",
-      "Strapi 5",
-      "VNPAY-QR",
-      "Docker",
-      "Docker Compose",
-      "NGINX",
-    ],
-    logo: "https://assets.chanhdai.com/images/project-logos/quaricdotcom.svg",
+    link: "https://ideaally.vercel.app/",
+    skills: ["Chatbot", "OpenAI", "React", "Nodejs Whatsapp Clone"],
+    description: `Whatsapp clone with AI chatbot integration. It allows users to chat with an AI assistant that can answer questions, provide information, and engage in conversations. The project showcases the integration of OpenAI's language model into a messaging platform, enabling users to interact with AI in a familiar chat interface.`,
   },
   {
-    id: "zadark",
-    title: "ZaDark",
+    id: "Paytm",
+    title: "Paytm Clone",
     period: {
-      start: "01.2022",
+      start: "01.2024",
+      end: "02.2024",
     },
-    link: "https://zadark.com",
-    skills: [
-      "Pet Project",
-      "Open Source",
-      "Browser Extension",
-      "CLI",
-      "Docusaurus 3",
-    ],
-    description: `ZaDark adds Dark Mode, anti-peeking, customizable fonts, backgrounds, and more to Zalo Web and PC.
-- Earned 10M+ VND in net sales from a paid Safari Extension.
-- 80,000+ downloads on SourceForge (awarded Community Leader badge by SourceForge)
-- 15,000+ active users via Chrome Web Store
-- Bronze Medal — 10th Design, Manufacturing, and Application Award 2022`,
-    logo: "https://assets.chanhdai.com/images/project-logos/zadark.svg",
+    link: "https://paytm-2.vercel.app/",
+    skills: ["Money Transfer", "React", "Nodejs", "mongoose"],
+    description: `A minimal PayTM-style digital payments web app that lets users manage a wallet and transfer money. Built as a learning project in JavaScript, covering core flows like sign up, add money, send/receive, and view transactions.
+
+`,
   },
   {
-    id: "qabox",
-    title: "QABox",
+    id: "Ecommerce",
+    title: "Ecommerce Website",
     period: {
-      start: "07.2023",
-      end: "07.2023",
+      start: "08.2023",
+      end: "11.2023",
     },
-    link: "https://github.com/ncdai/qabox",
-    skills: [
-      "University Project",
-      "PHP",
-      "MySQL",
-      "MVC",
-      "Docker",
-      "Docker Compose",
-    ],
-    description:
-      "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/ncdai/qabox",
-  },
-  {
-    id: "taskbox",
-    title: "TaskBox",
-    period: {
-      start: "07.2023",
-      end: "07.2023",
-    },
-    link: "https://github.com/ncdai/taskbox",
-    skills: [
-      "University Project",
-      "PHP",
-      "MySQL",
-      "MVC",
-      "Docker",
-      "Docker Compose",
-    ],
-    description:
-      "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/ncdai/taskbox",
-  },
-  {
-    id: "daichat-app",
-    title: "DaiChat App",
-    period: {
-      start: "07.2020",
-      end: "07.2020",
-    },
-    link: "https://www.youtube.com/watch?v=H5U3J_W1low",
-    skills: ["University Project", "Java", "Java Swing", "Java Networking"],
-    description: `- Course: Java Application Programming — FIT@HCMUS
-- Requirement: Developed a real-time chat application using Java technologies
-- Project Score: 10/10
-- Source Code:
-  - Server: https://github.com/ncdai/ltudjava-summer2020-chatapp_server
-  - Client: https://github.com/ncdai/ltudjava-summer2020-chatapp_client`,
-  },
-  {
-    id: "qlsv-app",
-    title: "QLSV App",
-    period: {
-      start: "06.2020",
-      end: "06.2020",
-    },
-    link: "https://www.youtube.com/watch?v=tG9SZEBrwog",
-    skills: ["University Project", "Java", "Java Swing", "Hibernate", "MySQL"],
-    description: `- Course: Java Application Programming — FIT@HCMUS
-- Requirement: Built a student management system with role-based functionalities using Java technologies
-- Project Score: 10/10
-- Source Code: https://github.com/ncdai/ltudjava-summer2020-hibernate`,
-  },
-  {
-    id: "penphy",
-    title: "Penphy",
-    period: {
-      start: "01.2019",
-      end: "08.2019",
-    },
-    link: "https://www.youtube.com/watch?v=EdU7rUO-UA4",
-    skills: ["Startup Project", "JavaScript", "React Native"],
-    description: "2nd Prize — Business Startup Competition 2019",
-  },
-  {
-    id: "unlimitedstudy",
-    title: "UnlimitedStudy",
-    period: {
-      start: "01.2017",
-      end: "08.2018",
-    },
-    link: "https://muctim.tuoitre.vn/cong-cu-ho-tro-viec-day-va-hoc-55107.htm",
-    skills: [
-      "National Competition",
-      "Creative Software",
-      "PHP",
-      "Laravel 4",
-      "MySQL",
-      "jQuery",
-      "Bootstrap 3",
-    ],
-    description: `UnlimitedStudy is a website that provides teaching and learning support tools for teachers and students.
-- 3rd Prize — National Science and Engineering Fair 2018 (ViSEF)
-- 1st Prize — Can Tho City Science and Engineering Fair 2018
-- 3rd Prize — National Young Informatics Contest 2018
-- 2nd Prize — Can Tho City Youth and Children's Creativity Contest 2018
-- 3rd Prize — Can Tho City Young Informatics Contest 2018
-- Reached 7,000+ users, mainly high school students in Can Tho City.
-- Pilot implemented in high schools across Can Tho City with English quizzes, supervised by English subject specialists from the Can Tho City Department of Education and Training.`,
-    logo: "https://assets.chanhdai.com/images/project-logos/unlimitedstudy.webp",
-  },
-  {
-    id: "dmessage",
-    title: "DMessage",
-    period: {
-      start: "05.2017",
-      end: "05.2017",
-    },
-    link: "https://github.com/ncdai/DMessage",
-    skills: [
-      "Self-learning Project",
-      "Pet Project",
-      "Express.js",
-      "Socket.io",
-      "MongoDB",
-      "Mongoose ODM",
-    ],
-    description:
-      "A Messenger clone built to practice real-time communication using Socket.IO. This project showcases my self-learning journey in implementing WebSockets for instant messaging.",
-  },
-  {
-    id: "study-english",
-    title: "Study English",
-    period: {
-      start: "11.2016",
-      end: "12.2017",
-    },
-    link: "https://www.youtube.com/watch?v=OYgugvjqU4A",
-    skills: [
-      "National Competition",
-      "Creative Software",
-      "PHP",
-      "Laravel 4",
-      "MySQL",
-    ],
-    description: `Study English is a free, mobile-friendly website for high school English learning, offering vocabulary, quizzes, listening practice, and more.
-- Consolation Prize — National Youth and Children's Creativity Contest 2016
-- 1st Prize — Can Tho City Youth and Children's Creativity Contest 2016
-- Consolation Prize — Can Tho City Young Informatics Contest 2016`,
+    link: "https://github.com/ab7022/Online-Shop/",
+    skills: ["Ecommerce Store", "React", "Nodejs", "mongoose"],
+    description: `A minimal Ecommerce website that allows users to browse and purchase products. Built as a learning project in JavaScript, covering core flows like product listing, shopping cart, and checkout.
+`,
   },
 ];

@@ -4,7 +4,13 @@ import Image from "next/image";
 import type { SocialLink } from "@/features/profile/types/social-links";
 import { cn } from "@/lib/utils";
 
-export function SocialLinkItem({ icon, title, description, href }: SocialLink) {
+export function SocialLinkItem({
+  icon,
+  title,
+  description,
+  href,
+  styles,
+}: SocialLink) {
   return (
     <a
       className={cn(
@@ -30,7 +36,8 @@ export function SocialLinkItem({ icon, title, description, href }: SocialLink) {
       </div> */}
 
       <Image
-        className="shrink-0"
+        className="shrink-0 rounded-xl"
+        style={{ transform: styles }}
         src={icon}
         alt={title}
         width={48}

@@ -32,27 +32,63 @@ export function ProjectItem({
   const { start, end } = project.period;
   const isOngoing = !end;
 
+  // Generate initials from project title
+  const getInitials = (title: string) => {
+    return title
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase())
+      .join("")
+      .slice(0, 2); // Limit to 2 characters
+  };
+
   return (
     <Collapsible defaultOpen={project.isExpanded} asChild>
       <div className={className}>
         <div className="flex items-center">
           {project.logo ? (
-            <Image
-              src={project.logo}
-              alt={project.title}
-              width={32}
-              height={32}
-              quality={100}
-              className="mx-4 flex size-6 shrink-0"
-              unoptimized
-              aria-hidden="true"
-            />
+            <>
+              {project.logoDark ? (
+                <>
+                  <Image
+                    src={project.logo}
+                    alt={project.title}
+                    width={32}
+                    height={32}
+                    quality={100}
+                    className="mx-4 flex size-6 shrink-0 dark:hidden"
+                    unoptimized
+                    aria-hidden="true"
+                  />
+                  <Image
+                    src={project.logoDark}
+                    alt={project.title}
+                    width={32}
+                    height={32}
+                    quality={100}
+                    className="mx-4 hidden size-6 shrink-0 dark:flex"
+                    unoptimized
+                    aria-hidden="true"
+                  />
+                </>
+              ) : (
+                <Image
+                  src={project.logo}
+                  alt={project.title}
+                  width={32}
+                  height={32}
+                  quality={100}
+                  className="mx-4 flex size-6 shrink-0"
+                  unoptimized
+                  aria-hidden="true"
+                />
+              )}
+            </>
           ) : (
             <div
-              className="mx-4 flex size-6 shrink-0 items-center justify-center text-muted-foreground"
+              className="mx-4 flex size-6 shrink-0 items-center justify-center rounded bg-muted text-xs font-medium text-muted-foreground"
               aria-hidden="true"
             >
-              <Icons.project className="size-5" />
+              {getInitials(project.title)}
             </div>
           )}
 

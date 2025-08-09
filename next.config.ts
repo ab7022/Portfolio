@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
         hostname: "assets.chanhdai.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "assets.devlop.app",
+        port: "",
+      },
     ],
   },
   async rewrites() {

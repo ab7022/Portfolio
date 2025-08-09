@@ -6,7 +6,6 @@ import { MobileNav } from "@/components/mobile-nav";
 import { NavItemGitHub } from "@/components/nav-item-github";
 import { ToggleTheme } from "@/components/toggle-theme";
 import { MAIN_NAV } from "@/config/site";
-import { getAllPosts } from "@/data/blog";
 import { cn } from "@/lib/utils";
 
 import { SiteHeaderMark } from "./site-header-mark";
@@ -21,8 +20,6 @@ const CommandMenu = dynamic(() =>
 );
 
 export function SiteHeader() {
-  const posts = getAllPosts();
-
   return (
     <SiteHeaderWrapper
       className={cn(
@@ -47,10 +44,10 @@ export function SiteHeader() {
         <DesktopNav items={MAIN_NAV} />
 
         <div className="flex items-center gap-2">
-          <CommandMenu posts={posts} />
+          <CommandMenu posts={[]} />
           <NavItemGitHub />
           <ToggleTheme />
-          <MobileNav className="sm:hidden" items={MAIN_NAV} />
+          {/* <MobileNav className="sm:hidden" items={[]} /> */}
         </div>
       </div>
     </SiteHeaderWrapper>

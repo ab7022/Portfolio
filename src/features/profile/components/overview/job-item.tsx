@@ -35,7 +35,7 @@ export function JobItem({
       icon={getJobIcon(title)}
       content={
         <>
-          {title} @
+          {title}
           <a
             className="ml-0.5 font-medium underline-offset-4 hover:underline"
             href={addQueryParams(website, UTM_PARAMS)}

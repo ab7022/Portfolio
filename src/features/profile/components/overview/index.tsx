@@ -20,7 +20,9 @@ export function Overview() {
             <JobItem
               key={index}
               title={job.title}
+              //@ts-ignore
               company={job.company}
+              //@ts-ignore
               website={job.website}
             />
           );
