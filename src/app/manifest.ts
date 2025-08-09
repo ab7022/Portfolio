@@ -9,28 +9,10 @@ export default function manifest(): MetadataRoute.Manifest {
     description: SITE_INFO.description,
     icons: [
       {
-        src: "https://assets.chanhdai.com/images/icon-vector.svg",
+        src: "/logo-white.svg",
         type: "image/svg+xml",
         sizes: "any",
         purpose: "any",
-      },
-      {
-        src: "https://assets.chanhdai.com/images/icon-192x192.png",
-        type: "image/png",
-        sizes: "192x192",
-        purpose: "any",
-      },
-      {
-        src: "https://assets.chanhdai.com/images/icon-512x512.png",
-        type: "image/png",
-        sizes: "512x512",
-        purpose: "any",
-      },
-      {
-        src: "https://assets.chanhdai.com/images/maskable-icon.png",
-        type: "image/png",
-        sizes: "512x512",
-        purpose: "maskable",
       },
     ],
     id: "/?utm_source=pwa",
@@ -39,28 +21,10 @@ export default function manifest(): MetadataRoute.Manifest {
     scope: "/",
     screenshots: [
       {
-        src: "https://assets.chanhdai.com/images/screenshot-mobile-dark.webp",
+        src: "https://assets.devlop.app/scrnli_04T8iLJPZrcOhv-min.png",
         type: "image/webp",
         sizes: "440x956",
         form_factor: "narrow",
-      },
-      {
-        src: "https://assets.chanhdai.com/images/screenshot-mobile-light.webp",
-        type: "image/webp",
-        sizes: "440x956",
-        form_factor: "narrow",
-      },
-      {
-        src: "https://assets.chanhdai.com/images/screenshot-desktop-dark.webp",
-        type: "image/webp",
-        sizes: "1920x1080",
-        form_factor: "wide",
-      },
-      {
-        src: "https://assets.chanhdai.com/images/screenshot-desktop-light.webp",
-        type: "image/webp",
-        sizes: "1920x1080",
-        form_factor: "wide",
       },
     ],
   };
