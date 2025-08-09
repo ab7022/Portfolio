@@ -2,27 +2,27 @@
   "name": "Abdul Bayees",
   "version": "0.1.0",
   "description": "A minimal portfolio, component registry, and blog.",
-  "homepage": "https://chanhdai.com",
+  "homepage": "https://abdulbayees.me",
   "license": "MIT",
   "author": {
-    "name": "Nguyen Chanh Dai",
-    "email": "dai@chanhdai.com",
-    "url": "https://github.com/ncdai"
+    "name": "Abdul Bayees",
+    "email": "bayees1@gmail.com",
+    "url": "https://github.com/ab7022"
   },
   "contributors": [
     {
-      "name": "Nguyen Chanh Dai",
-      "email": "dai@chanhdai.com",
-      "url": "https://github.com/ncdai"
+      "name": "Abdul bayees",
+      "email": "bayees1@gmail.com",
+      "url": "https://github.com/ab7022"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ncdai/chanhdai.com.git"
+    "url": "git+https://github.com/ab7022/chanhdai.com.git"
   },
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build ",
     "start": "next start",
     "preview": "next build --turbopack && next start -p 1408",
     "lint": "next lint",

@@ -6,20 +6,14 @@ import {
   BriefcaseBusinessIcon,
   CircleUserIcon,
   CornerDownLeftIcon,
-  DownloadIcon,
   LetterTextIcon,
   MoonStarIcon,
-  RssIcon,
   SunIcon,
-  TextIcon,
-  TriangleDashedIcon,
-  TypeIcon,
 } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
-import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { toast } from "sonner";
+import React, { useCallback, useEffect, useState } from "react";
 
 import {
   CommandDialog,
@@ -33,10 +27,8 @@ import {
 import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
 import { cn } from "@/lib/utils";
 import type { Post } from "@/types/blog";
-import { copyText } from "@/utils/copy";
 
-import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark";
-import { getWordmarkSVG } from "./chanhdai-wordmark";
+import { ChanhDaiMark } from "./chanhdai-mark";
 import { Icons } from "./icons";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
@@ -50,24 +42,6 @@ type CommandLinkItem = {
   keywords?: string[];
   openInNewTab?: boolean;
 };
-
-const MENU_LINKS: CommandLinkItem[] = [
-  {
-    title: "Daifolio",
-    href: "/",
-    icon: ChanhDaiMark,
-  },
-  {
-    title: "Blog",
-    href: "/blog",
-    icon: RssIcon,
-  },
-  {
-    title: "Components",
-    href: "/components",
-    icon: Icons.react,
-  },
-];
 
 const DAIFOLIO_LINKS: CommandLinkItem[] = [
   {
@@ -113,7 +87,7 @@ const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => ({
 export function CommandMenu({ posts }: { posts: Post[] }) {
   const router = useRouter();
 
-  const { setTheme, resolvedTheme } = useTheme();
+  const { setTheme } = useTheme();
 
   const [open, setOpen] = useState(false);
 
@@ -157,30 +131,12 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
     [router]
   );
 
-  const handleCopyText = useCallback((text: string, message: string) => {
-    setOpen(false);
-    copyText(text);
-    toast.success(message);
-  }, []);
-
   const handleThemeChange = useCallback(
     (theme: "light" | "dark" | "system") => {
       setOpen(false);
       setTheme(theme);
     },
     [setTheme]
-  );
-
-  const { blogLinks, componentLinks } = useMemo(
-    () => ({
-      blogLinks: posts
-        .filter((post) => post.metadata?.category !== "components")
-        .map(postToCommandLinkItem),
-      componentLinks: posts
-        .filter((post) => post.metadata?.category === "components")
-        .map(postToCommandLinkItem),
-    }),
-    [posts]
   );
 
   return (

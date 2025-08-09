@@ -1,9 +1,10 @@
+import Image from "next/image";
+
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import { USER } from "@/data/user";
 import { cn } from "@/lib/utils";
 import { FlipSentences } from "@/registry/flip-sentences";
-import Image from "next/image";
-import { PronounceMyName } from "./pronounce-my-name";
+
 import { VerifiedIcon } from "./verified-icon";
 
 export function ProfileHeader() {
@@ -11,7 +12,7 @@ export function ProfileHeader() {
     <div className="screen-line-after flex border-x border-edge">
       <div className="shrink-0 border-r border-edge">
         <div className="mx-[2px] my-[3px]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {}
           <Image
             className="size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none sm:size-40"
             alt={`${USER.displayName}'s avatar`}

@@ -7,7 +7,6 @@ import {
 import Image from "next/image";
 import React from "react";
 
-import { Icons } from "@/components/icons";
 import { Markdown } from "@/components/markdown";
 import {
   Collapsible,

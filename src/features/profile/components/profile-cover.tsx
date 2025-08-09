@@ -1,7 +1,7 @@
-import { BrandContextMenu } from "@/components/brand-context-menu";
-import { ChanhDaiMark } from "@/components/chanhdai-mark";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
+
+import { BrandContextMenu } from "@/components/brand-context-menu";
+import { cn } from "@/lib/utils";
 export function ProfileCover() {
   return (
     <BrandContextMenu>

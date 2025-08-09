@@ -22,11 +22,6 @@ export async function GET() {
     card.addPhoto(photo.image, photo.mine);
   }
 
-  if (USER.jobs.length > 0) {
-    const company = USER.jobs[0];
-    card.addCompany(company.company).addJobtitle(company.title);
-  }
-
   return new NextResponse(card.toString(), {
     status: 200,
     headers: {

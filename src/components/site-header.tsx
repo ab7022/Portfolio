@@ -2,7 +2,6 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 
 import { DesktopNav } from "@/components/desktop-nav";
-import { MobileNav } from "@/components/mobile-nav";
 import { NavItemGitHub } from "@/components/nav-item-github";
 import { ToggleTheme } from "@/components/toggle-theme";
 import { MAIN_NAV } from "@/config/site";

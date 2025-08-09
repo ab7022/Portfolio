@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 import { SimpleTooltip } from "@/components/ui/tooltip";
@@ -89,6 +88,7 @@ export function TeckStack() {
                   >
                     {tech.icon ? (
                       <tech.icon
+                        //@ts-ignore
                         size={32}
                         aria-label={tech.title}
                         color={
