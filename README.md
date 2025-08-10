@@ -1,6 +1,6 @@
 # [AbdulBayees.me](https://abdulbayees.me)
 
-A minimal portfolio, component registry, and blog to showcase my work as a Design Engineer.
+A minimal portfolio, component registry, and blog to showcase my work as a Full Stack Engineer.
 
 Check out the live site: [AbdulBayees.me](https://abdulbayees.me)
 
